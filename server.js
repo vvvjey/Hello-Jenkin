@@ -80,7 +80,7 @@ async function createZaloPayTransaction(amount) {
   } catch (error) {
     console.log(error);
   }
-
+  // hello
   // try {
   //   const response = await axios.post(endpoint, data);
   //   console.log(response.data);

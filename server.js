@@ -32,10 +32,16 @@ app.use(bodyParser.urlencoded({
 const app_id = '2554';
 const key1 = 'sdngKKJmqEMzvh5QQcdD2A9XBSKUNaYn';
 const endpoint = 'https://sb-openapi.zalopay.vn/v2/create';
+// const config = {
+//   app_id: '2554',
+//   key1: 'sdngKKJmqEMzvh5QQcdD2A9XBSKUNaYn',
+//   key2: 'kLtgPl8HHhfvMuDHPwKfgfsY4Ydm9eIz',
+//   endpoint: 'https://sb-openapi.zalopay.vn/v2/create',
+// };
 const config = {
-  app_id: '2554',
-  key1: 'sdngKKJmqEMzvh5QQcdD2A9XBSKUNaYn',
-  key2: 'kLtgPl8HHhfvMuDHPwKfgfsY4Ydm9eIz',
+  app_id: '554',
+  key1: '8NdU5pG5R2spGHGhyO99HN1OhD8IQJBn',
+  key2: 'uUfsWgfLkRLzq6W2uNXTCxrfxs51auny',
   endpoint: 'https://sb-openapi.zalopay.vn/v2/create',
 };
 async function createZaloPayTransaction(amount) {
@@ -53,7 +59,7 @@ async function createZaloPayTransaction(amount) {
     //khi thanh toán xong, zalopay server sẽ POST đến url này để thông báo cho server của mình
     //Chú ý: cần dùng ngrok để public url thì Zalopay Server mới call đến được
     callback_url: 'https://b074-1-53-37-194.ngrok-free.app/callback',
-    description: `Chó fiii :) #${transID}`,
+    description: `tu hoang :) #${transID}`,
     bank_code: '',
   };
 
